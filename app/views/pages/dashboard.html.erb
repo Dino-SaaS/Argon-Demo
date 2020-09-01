@@ -26,7 +26,8 @@
       </div>
       <div class="row">
         <div class="col-xl-8">
-          <%= render 'pages/dashboard/tables/page_visits' %>
+          <%= render partial: 'pages/dashboard/tables/page_visits',
+            locals: { page_visits: @page_visits } %>
         </div>
         <div class="col-xl-4">
           <%= render 'pages/dashboard/tables/social_traffic' %>
